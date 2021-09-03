@@ -1,6 +1,7 @@
 import axios from "axios";
-const { API_HOST } = require("./config");
+const API_HOST = process.env.REACT_APP_API_HOST;
 const { CancelToken } = axios;
+console.log(API_HOST);
 const search = (input) => {
   if (input) {
     try {
