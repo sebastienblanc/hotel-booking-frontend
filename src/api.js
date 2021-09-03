@@ -1,7 +1,5 @@
-const { API_HOST } = require("./config");
-
 import axios from "axios";
-
+const { API_HOST } = require("./config");
 const { CancelToken } = axios;
 const search = (input) => {
   if (input) {
