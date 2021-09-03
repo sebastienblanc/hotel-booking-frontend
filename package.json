@@ -18,11 +18,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=256 start",
+    "start": "react-scripts --max_old_space_size=750 start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:1338",
   "eslintConfig": {
     "extends": [
       "react-app",
