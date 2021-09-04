@@ -1,10 +1,10 @@
 # Stage 1: Use yarn to build the app
 FROM node:14 as builder
 WORKDIR /usr/src/app
-COPY package.json package-lock.json ./
-RUN npm install
+COPY package.json yarn.lock ./
+RUN yarn
 COPY . ./
-RUN npm run build
+RUN yarn build
 
 # Stage 2: Copy the JS React SPA into the Nginx HTML directory
 FROM bitnami/nginx:latest
